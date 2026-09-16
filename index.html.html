@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDB Landing Page</title>
+    <link rel="icon" href="https://web.jdbinfotech.co.in/images/jdblogo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .headerbox,
+        .bookdemobox,
+        .batchcardsection,
+        .whyustilesectionbox,
+        .webdevcardbox,
+        .ourtutorsection,
+        .maplocationnox {
+            display: flex;
+        }
+
+        .formbox,
+        form,
+        input {
+            display: block;
+        }
+
+        .headerbox {
+            justify-content: space-between;
+            margin: auto;
+            align-items: center;
+            border-bottom: 4px solid yellow;
+            padding: 10px 40px;
+        }
+
+        .headerbox .logobox img {
+            width: 300px;
+        }
+
+        .headerbox .menubox a {
+            text-decoration: none;
+            margin: 10px 10px;
+            font-weight: 800;
+            font-size: 18px;
+            color: black;
+            padding: 10px;
+        }
+
+        .headerbox .menubox a:hover {
+            border-bottom: 4px solid rgb(113, 13, 13);
+            color: rgb(113, 13, 13);
+
+        }
+
+        .bannerbox {
+            background-color: #13234C;
+            padding: 40px;
+
+        }
+
+        .bannerbox p {
+            font-size: 30px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 50px;
+            color: white;
+
+        }
+
+        .bookdemobox {
+            justify-content: space-evenly;
+        }
+
+        .bookdemobox .contactbox {
+            padding: 30px 10px;
+            text-align: center;
+            border: 5px solid black;
+            border-radius: 10px;
+        }
+
+        .ratingbox i {
+            color: #F0C709;
+        }
+
+        .ratingbox p {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .contactbox .titlebox p {
+            text-align: start;
+            font-size: 26px;
+            font-weight: bold;
+            margin: 20px 0px;
+        }
+
+        .contactbtnbox button a {
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+        }
+
+        .enrollformbox {
+            background-color: #13234C;
+            padding: 10px 50px;
+            border-radius: 12px;
+
+        }
+
+        .enrollformbox .formtitlebox {
+            font-size: 30px;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .formbox input {
+            justify-content: center;
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+            margin: 20px 0px;
+            outline: none;
+        }
+
+        .formbox select {
+            width: 100%;
+            padding: 14px;
+            border-radius: 12px;
+
+        }
+
+        .formbtnbox button {
+            width: 100%;
+            padding: 15px;
+            background-color: rgb(23, 89, 194);
+            color: white;
+            font-weight: 800;
+            border: none;
+            border-radius: 12px;
+            margin-top: 20px;
+            transition: all 1s;
+        }
+
+        .formbtnbox button:hover {
+            background-color: #F0C709;
+            transition: all 1s;
+        }
+
+        .bookdemobox {
+            margin-top: 40px;
+        }
+
+        .batchcardbox {
+            background-color: #13234C;
+            padding: 50px;
+            text-align: center;
+            color: white;
+            width: 23%;
+            margin: 20px auto;
+            border-radius: 20px;
+        }
+
+        .batchcardbox .batchiconbox i {
+            font-size: 30px;
+        }
+
+        .batchcardbox:hover {
+            transition: all .3s;
+            border: 6px solid yellow;
+            box-shadow: 0px 0px 7px 7px grey;
+        }
+
+        .batchcardbox .batchtitlebox {
+            font-size: 28px;
+            font-weight: bold;
+            padding-top: 20px;
+        }
+
+        .batchcardbox .batchdescriptionbox {
+            font-size: 18px;
+            font-weight: bold;
+            padding-top: 20px;
+            line-height: 40px;
+        }
+
+        .batchcardsection {
+            flex-wrap: wrap;
+            margin: 60px 80px auto;
+            justify-content: center;
+        }
+
+        .batchesbox .batchtitlebox h2 {
+            text-align: center;
+            font-size: 40px;
+            margin-top: 40px;
+            padding: 20px;
+            justify-content: center;
+
+
+        }
+
+        hr {
+            width: 24%;
+            height: 4px;
+            background-color: rgb(113, 13, 13);
+            border-radius: 12px;
+            margin: 20px auto;
+        }
+
+        .whyustitlebox h2 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+
+        .whyussection {
+            background-color: rgba(172, 206, 237, 0.297);
+            padding: 40px;
+            margin: 40px auto;
+        }
+
+        .whyustilesectionbox {
+            flex-wrap: wrap;
+            padding: 40px;
+            margin: auto;
+
+        }
+
+        .whyusbulletbox {
+            width: 22%;
+            margin: 20px auto;
+        }
+
+        .whyusbulletbox p {
+            cursor: pointer;
+        }
+
+
+        .webdevcardbox {
+            background-color: #13234C;
+            margin: 40px 50px auto;
+            padding: 40px;
+            border-radius: 20px;
+            justify-content: space-between;
+
+        }
+
+        .webdevcardleftbox {
+            width: 45%;
+        }
+
+        .webdevcardleftbox .webdevimgbox img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .webdevcardleftbox .webdevenrollbtnbox {
+            text-align: start;
+            margin: auto;
+            margin-left: 150px;
+        }
+
+        .webdevcardleftbox .webdevenrollbtnbox button {
+            background-color: #13234C;
+            color: white;
+            padding: 15px 40px;
+            border: 2px solid white;
+            margin-top: 50px;
+            border-radius: 20px;
+            font-size: 18px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .webdevtilebox p {
+            color: white;
+            padding: 10px 20px;
+            border-bottom: 2px solid white;
+            margin-bottom: 10px;
+        }
+
+        .webdevcardrightbox {
+            width: 45%;
+        }
+
+        .webdevcoursetitlebox {
+            background-color: #13234C;
+        }
+
+        .webdevcoursetitlebox p {
+            color: black;
+            padding: 10px 20px;
+            /* border-bottom: 2px solid white; */
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .ourstudentscompaniesboxtitle p {
+
+            color: black;
+            padding: 10px 20px;
+            /* border-bottom: 2px solid white; */
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 40px;
+        }
+
+
+        .ourstudentscompaniesbox {
+            margin: 60px auto;
+            padding: 80px;
+
+
+        }
+
+        .ourstudentscompaniesbox .ourstudentsdescriptionbox p {
+            font-weight: 700;
+            font-size: 18px;
+            text-align: center;
+            color: rgb(69, 64, 64);
+            line-height: 40px;
+        }
+
+        .webdevcoursecirculam {
+            background-color: #13234C;
+            margin: 20px auto;
+            padding: 20px;
+            color: white;
+
+        }
+
+        .webdevcoursetitle p {
+            margin: auto;
+            color: white;
+            font-size: 34px;
+            padding: 40px;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 5px;
+
+        }
+
+        .coursecirculambox {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .webdevbullet {
+            border-bottom: 2px solid white;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+
+        .webcoursecirculambox {
+            width: 30%;
+        }
+
+        .webdevtitlebox p {
+            color: white;
+            font-size: 24px;
+        }
+
+
+        .circulambottomtext p {
+            text-align: center;
+            font-size: 26px;
+            font-weight: 800;
+            margin: 40px auto;
+
+
+        }
+
+        .webdevcoursecirculam .enrollbtn {
+            display: flex;
+        }
+
+        .webdevcoursecirculam .enrollbtn button {
+            padding: 20px;
+            border: 2px solid white;
+            background-color: #13234C;
+            color: blue;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 12px;
+            text-align: center;
+            justify-content: center;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+
+
+        .webdevcoursecirculam .enrollbtn button:hover {
+            background-color: white;
+            color: blue;
+        }
+
+        .webdevcoursecirculam .enrollbtn button a {
+            text-decoration: none;
+        }
+
+        .coursehighlightsbox h2 {
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .coursehighlightsbox {
+            justify-content: center;
+            margin: auto;
+        }
+
+        .highlightscardbox {
+
+            width: 90%;
+            margin: 20px auto;
+            justify-content: center;
+        }
+
+        .highlightscardbox .highlightcard {
+            width: 14%;
+            margin: 40px auto;
+            text-align: center;
+            padding: 50px 10px;
+            border: .5px solid rgb(39, 37, 37);
+            border-radius: 12px;
+            box-shadow: 0px 0px 1px 4px rgb(100, 96, 96);
+        }
+
+        .highlightscardbox .highlightcard:hover {
+            width: 14%;
+            margin: 40px auto;
+            text-align: center;
+            padding: 50px 10px;
+            border: 2px solid black;
+            border-radius: 12px;
+            box-shadow: 0px 0px 4px 10px rgb(47, 45, 45);
+        }
+
+        .highlightscardbox {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .cardiconbox i {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        .carddescriptionbox p {
+            margin-top: 20px;
+            font: 18px;
+
+            font-weight: 800;
+        }
+
+        .bookdemobtn {
+            text-align: center;
+            margin-top: 20px auto;
+        }
+
+        .bookdemobtn button {
+            text-align: center;
+            color: white;
+            background-color: #13234C;
+            padding: 20px 40px;
+            border-radius: 12px;
+            margin: 20px auto;
+        }
+
+        .bookdemobtn button a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 50%;
+            /* height: 100%; */
+            object-fit: cover;
+        }
+
+        .swiper-wrapper {
+            margin: 20px;
+        }
+
+        .certificationsliderparentbox {
+            display: flex;
+        }
+
+
+        .certificationstaticimage {
+            width: 40%;
+        }
+
+        .certificationstaticimage img {
+            width: 200px;
+        }
+
+        .certificationsliderbox {
+            width: 60%;
+        }
+
+        .certificationtitlebox {
+            text-align: center;
+            margin-right: 30px;
+        }
+
+        .webdevcardrightcontent img {
+            width: 500px;
+            border-radius: 20px;
+        }
+
+        .webdevcoursebox {
+            display: flex;
+            background-color: #13234C;
+            padding: 40px 60px;
+            justify-content: space-evenly;
+        }
+
+        .webdevcardleftcontent {
+            width: 55%
+        }
+
+        .webdevcardtitlebox h2 {
+            color: white;
+            font-size: 42px;
+            text-align: center;
+            font-weight: 800;
+            line-height: 50px;
+        }
+
+        .webdevdescriptionbox p {
+            margin-top: 20px;
+            color: white;
+            font-size: 22px;
+            line-height: 40px;
+            text-align: center;
+        }
+
+
+        .webdevbtnbox {
+            text-align: center;
+            margin: 10px auto;
+
+        }
+
+        .webdevbtnbox button {
+            padding: 20px 40px;
+            color: blue;
+            border: 2px solid white;
+            border-radius: 12px;
+            background-color: #13234C;
+        }
+
+        .webdevbtnbox button:hover {
+            color: blue;
+            background-color: white;
+        }
+
+        .webdevbtnbox button a {
+            text-decoration: none;
+            color: blue;
+            font-weight: 800;
+            font-size: 18px;
+        }
+
+        .ourspecialistcardbox {
+            display: flex;
+            margin: 20px auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .ourspecialistcard {
+            width: 22%;
+            padding: 40px;
+            margin: 20px auto;
+            background-color: #13234C;
+            text-align: center;
+            border-radius: 20px;
+
+        }
+
+        .ourspecialistcard:hover {
+            border: 4px solid yellow;
+
+        }
+
+        .ourspecialisticonbox i {
+            font-size: 32px;
+            padding: 20px;
+        }
+
+        .ourspecialisttitlebox p {
+            font-size: 32px;
+            color: white;
+            margin-top: 20px;
+        }
+
+        .ourspecialistdescriptionbox p {
+            color: white;
+            margin-top: 10px;
+        }
+
+        .ourspecialisttitlebox {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 28px;
+        }
+
+        .teachersdetailssection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .teachersdetailssection .teacherimage img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+
+        .innerboxcard {
+            margin: 20px;
+            padding: 40px;
+            background-color: whitesmoke;
+            border-radius: 10px;
+
+        }
+
+        .teacherscardsection {
+            margin: 20px auto;
+            background-color: #13234C;
+            padding: 20px;
+            border-radius: 20px;
+            width: 28%;
+        }
+
+        .teacherdescription {
+            margin-top: 10px;
+            text-align: justify;
+        }
+
+        .teacherstitlebox {
+            text-align: center;
+            font-weight: 800;
+            font-size: 32px;
+            margin-top: 20px;
+        }
+
+        .teacherssection {
+            background-color: rgba(99, 176, 198, 0.23);
+            margin: 40px auto;
+            padding: 40px;
+        }
+
+        .teacherssection .teacherscardsection:hover {
+            border: 4px solid yellow;
+        }
+
+        .teachername {
+            font-weight: 800;
+        }
+
+        .faqsection {
+            margin: 40px auto;
+            padding: 40px;
+
+        }
+
+        .faqsection summary {
+            color: #2d98ea;
+            font-size: 20px;
+            border: 2px solid black;
+            padding: 20px;
+            font-weight: 700;
+
+        }
+
+        .faqsection details {
+            color: black;
+            font-size: 20px;
+            border: 2px solid black;
+            padding: 20px;
+            font-weight: 700;
+        }
+
+        .faqtitlebox p {
+            font-size: 32px;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+
+        .faqsubtitle p {
+
+            font-size: 32px;
+            color: rgb(255, 230, 0);
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .expansionbox {
+            padding: 20px;
+            margin: 20px auto;
+        } 
+
+        .maplocationnox{
+            justify-content: space-between;
+        }
+
+        .contactdetails ul li{
+        margin-left: 20px;
+            font-size: 22px;
+            text-align: start;
+            padding: 10px 20px;
+        }
+
+        .contacttitle p{
+            font-size: 28px;
+            color: black;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+.googlemap {
+    margin-right: 20px;
+}
+
+.maplocationnox{
+    background-color:rgba(99, 176, 198, 0.23) ;
+    padding: 30px;
+}
+    </style>
+
+
+
+    <div class="pagebox">
+
+        <div class="headerbox">
+            <div class="logobox">
+                <img src="https://web.jdbinfotech.co.in/images/jdblogo.jpg" alt="">
+
+            </div>
+            <div class="menubox">
+                <a href="">Book a Demo</a>
+                <a href="">Why</a>
+                <a href="">Modules</a>
+                <a href="">Reviews</a>
+                <a href="">Trainers</a>
+                <a href="">Certifications</a>
+                <a href="">Gallery</a>
+                <a href="">FAQ's</a>
+                <a href="tel:7073734854"><i class="fas fa-phone-alt" style="color: rgb(0, 0, 0);"></i> 9656223823</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="bannerbox">
+            <p>Jaipur's Best <span style="color: #F0C709;">Agency Based & AI Integrated</span> Web and App Development
+                Institute <br>
+                <span style="color: #F0C709;">100% Job Placement Assistance</span>
+            </p>
+        </div>
+
+        <div class="bookdemobox">
+            <div class="contactbox">
+                <div class="ratingbox">
+                    <p>Google <span><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class=" fas fa-star"></i>
+                            <i class="fas fa-star"></i><i class="fas fa-star-half"></i></span></p>
+                </div>
+                <div class="titlebox">
+                    <p>No.1 Institute for Web Development Course</p>
+                </div>
+                <div class="imgbox"><img src="https://web.jdbinfotech.co.in/images/Web%20Development%20.gif" alt="">
+                </div>
+                <div class="contactbtnbox">
+                    <button
+                        style="padding: 10px 20px; background-color: red; border-radius: 12px; border:none;margin: 10px; "><a
+                            href="tel:+9170737-34854" target="_blank">Call Now</a></button>
+                    <button
+                        style="padding: 10px 20px; background-color: green; border-radius: 12px; border:none; margin: 10px;"><a
+                            href="https://api.whatsapp.com/send?phone=7073734854" target="_blank">Whatsapp
+                            Now</a></button>
+
+                </div>
+
+            </div>
+            <div class="enrollformbox">
+
+                <div class="formtitlebox">
+                    <h2>Enroll Now For A Demo Class!!</h2>
+                </div>
+
+                <div class="formbox">
+                    <form action="">
+                        <input type="text" placeholder="Name" required>
+                        <input type="number" placeholder="Number" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="city" placeholder="City" required>
+                        <select name="selectcourse" id="course" required margin="0px">
+                            <option value="appdev" selected disabled> Choose Course</option>
+                            <option value="appdev"> App Development</option>
+                            <option value="wevddev"> Web Development</option>
+                            <option value="wevddev"> Web Development</option>
+                            <option value="wevddev"> Web Development</option>
+                            <option value="wevddev"> Web Development</option>
+
+
+                        </select>
+                        <div class="formbtnbox">
+                            <button type="submit"> Yes I'am Ready</button>
+                        </div>
+
+                    </form>
+
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+        <div class="batchesbox">
+            <div class="batchtitlebox">
+                <h2>Upcoming Training Batches</h2>
+                <hr>
+            </div>
+
+            <div class="batchcardsection">
+                <div class="batchcardbox">
+                    <div class="batchiconbox">
+                        <i class="fa-solid fa-clock" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="batchtitlebox">
+
+                        <p>Course Duration</p>
+                    </div>
+                    <div class="batchdescriptionbox"> 4 Months Course+ <br> 2 Months Internship</div>
+                </div>
+                <div class="batchcardbox">
+                    <div class="batchiconbox">
+                        <i class="fa-solid fa-clock" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="batchtitlebox">
+
+                        <p>Course Duration</p>
+                    </div>
+                    <div class="batchdescriptionbox"> 4 Months Course+ <br> 2 Months Internship</div>
+                </div>
+                <div class="batchcardbox">
+                    <div class="batchiconbox">
+                        <i class="fa-solid fa-clock" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="batchtitlebox">
+
+                        <p>Course Duration</p>
+                    </div>
+                    <div class="batchdescriptionbox"> 4 Months Course+ <br> 2 Months Internship</div>
+                </div>
+                <div class="batchcardbox">
+                    <div class="batchiconbox">
+                        <i class="fa-solid fa-clock" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="batchtitlebox">
+
+                        <p>Course Duration</p>
+                    </div>
+                    <div class="batchdescriptionbox"> 4 Months Course+ <br> 2 Months Internship</div>
+                </div>
+                <div class="batchcardbox">
+                    <div class="batchiconbox">
+                        <i class="fa-solid fa-clock" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="batchtitlebox">
+
+                        <p>Course Duration</p>
+                    </div>
+                    <div class="batchdescriptionbox"> 4 Months Course+ <br> 2 Months Internship</div>
+                </div>
+                <div class="batchcardbox">
+                    <div class="batchiconbox">
+                        <i class="fa-solid fa-clock" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="batchtitlebox">
+
+                        <p>Course Duration</p>
+                    </div>
+                    <div class="batchdescriptionbox"> 4 Months Course+ <br> 2 Months Internship</div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="whyussection">
+
+
+            <div class="whyustitlebox">
+
+                <h2>Why Choose JDB INFOTECH ?</h2>
+            </div>
+            <hr>
+            <div class="whyustilesectionbox">
+                <div class="whyusbulletbox">
+
+                    <p><span><i class="fa-solid fa-rocket" style="color: rgb(0, 0, 0);"></i></span> Basic to Advance
+                        Level Mastery</p>
+                </div>
+                <div class="whyusbulletbox">
+
+                    <p><span><i class="fa-solid fa-rocket" style="color: rgb(0, 0, 0);"></i></span> Basic to Advance
+                        Level Mastery</p>
+                </div>
+                <div class="whyusbulletbox">
+
+                    <p><span><i class="fa-solid fa-rocket" style="color: rgb(0, 0, 0);"></i></span> Basic to Advance
+                        Level Mastery</p>
+                </div>
+                <div class="whyusbulletbox">
+
+                    <p><span><i class="fa-solid fa-rocket" style="color: rgb(0, 0, 0);"></i></span> Basic to Advance
+                        Level Mastery</p>
+                </div>
+                <div class="whyusbulletbox">
+
+                    <p><span><i class="fa-solid fa-rocket" style="color: rgb(0, 0, 0);"></i></span> Basic to Advance
+                        Level Mastery</p>
+                </div>
+                <div class="whyusbulletbox">
+
+                    <p><span><i class="fa-solid fa-rocket" style="color: rgb(0, 0, 0);"></i></span> Basic to Advance
+                        Level Mastery</p>
+                </div>
+                <div class="whyusbulletbox">
+
+                    <p><span><i class="fa-solid fa-rocket" style="color: rgb(0, 0, 0);"></i></span> Basic to Advance
+                        Level Mastery</p>
+                </div>
+                <div class="whyusbulletbox">
+
+                    <p><span><i class="fa-solid fa-rocket" style="color: rgb(0, 0, 0);"></i></span> Basic to Advance
+                        Level Mastery</p>
+                </div>
+            </div>
+
+
+            <div class="webdevcardbox">
+                <div class="webdevcardleftbox">
+                    <div class="webdevimgbox">
+                        <img src="https://web.jdbinfotech.co.in/images/Web%20Development%20.png" alt="">
+                    </div>
+                    <div class="webdevenrollbtnbox">
+
+                        <button>Enroll Now</button>
+                    </div>
+                </div>
+                <div class="webdevcardrightbox">
+                    <div class="webdevtilebox">
+                        <p> <span><i class="fa-solid fa-star"
+                                    style="color: rgb(255, 212, 59); margin-right: 30px;"></i></span>Months
+                            Internship Program</p>
+                    </div>
+                    <div class="webdevtilebox">
+                        <p> <span><i class="fa-solid fa-star"
+                                    style="color: rgb(255, 212, 59); margin-right: 30px;"></i></span>Months
+                            Internship Program</p>
+                    </div>
+                    <div class="webdevtilebox">
+                        <p> <span><i class="fa-solid fa-star"
+                                    style="color: rgb(255, 212, 59); margin-right: 30px;"></i></span>Months
+                            Internship Program</p>
+                    </div>
+                    <div class="webdevtilebox">
+                        <p> <span><i class="fa-solid fa-star"
+                                    style="color: rgb(255, 212, 59); margin-right: 30px;"></i></span>Months
+                            Internship Program</p>
+                    </div>
+                    <div class="webdevtilebox">
+                        <p> <span><i class="fa-solid fa-star"
+                                    style="color: rgb(255, 212, 59); margin-right: 30px;"></i></span>Months
+                            Internship Program</p>
+                    </div>
+                    <div class="webdevtilebox">
+                        <p> <span><i class="fa-solid fa-star"
+                                    style="color: rgb(255, 212, 59); margin-right: 30px;"></i></span>Months
+                            Internship Program</p>
+                    </div>
+                    <div class="webdevtilebox">
+                        <p> <span><i class="fa-solid fa-star"
+                                    style="color: rgb(255, 212, 59); margin-right: 30px;"></i></span>Months
+                            Internship Program</p>
+                    </div>
+                    <div class="webdevtilebox">
+                        <p> <span><i class="fa-solid fa-star"
+                                    style="color: rgb(255, 212, 59); margin-right: 30px;"></i></span>Months
+                            Internship Program</p>
+                    </div>
+                    <div class="webdevtilebox">
+                        <p> <span><i class="fa-solid fa-star"
+                                    style="color: rgb(255, 212, 59); margin-right: 30px;"></i></span>Months
+                            Internship Program</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="webdevcoursecirculam">
+            <div class="webdevcoursetitle">
+                <p>Web Development Course Curriculum</p>
+                <hr style="color: white; background-color: white; height: 2px; margin-bottom: 40px; width: 80%; ">
+            </div>
+            <div class="coursecirculambox">
+                <div class="webcoursecirculambox">
+                    <div class="webdevbox">
+                        <div class="webdevtitlebox">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevtitlebox">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevtitlebox">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevtitlebox">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="webcoursecirculambox">
+                    <div class="webdevbox">
+                        <div class="webdevtitlebox">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevtitlebox">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevtitlebox">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevtitlebox">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="webcoursecirculambox">
+                    <div class="webdevbox">
+                        <div class="webdevtitlebox">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevtitlebox">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevtitlebox">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevtitlebox">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+                        <div class="webdevbullet">
+                            <p><span><i class="fas fa-check" style="color: rgb(255, 212, 59);"></i></span> What is Web
+                                Development?</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="circulambottomtext">
+                <p>We Will Cover 45+ Modules Download the Brochure to Get More Details</p>
+            </div>
+            <div class="enrollbtn">
+                <button> <a href="https://web.jdbinfotech.co.in/JDB%20INFOTECH.pdf" ;target="_blank">Download
+                        Brochure</a></button>
+            </div>
+
+
+        </div>
+        <div class="elfsight-app-8d9fa4e9-f8ce-4c70-8ea0-13ccb8402702" data-elfsight-app-lazy></div>
+
+        <div class="coursehighlightsbox">
+            <div class="coursehighlightsbox">
+
+                <h2>Course Highlights</h2>
+            </div>
+            <hr>
+            <div class="highlightscardbox">
+
+                <div class="highlightcard">
+                    <div class="cardiconbox"><i class="fas fa-trophy" style="color: rgb(239, 148, 0);"></i></div>
+                    <div class="carddescriptionbox">
+                        <p>09+ YEARS OF<br>EXPERIENCE.</p>
+                    </div>
+                </div>
+                <div class="highlightcard">
+                    <div class="cardiconbox"><i class="fas fa-trophy" style="color: rgb(239, 148, 0);"></i></div>
+                    <div class="carddescriptionbox">
+                        <p>09+ YEARS OF<br>EXPERIENCE.</p>
+                    </div>
+                </div>
+                <div class="highlightcard">
+                    <div class="cardiconbox"><i class="fas fa-trophy" style="color: rgb(239, 148, 0);"></i></div>
+                    <div class="carddescriptionbox">
+                        <p>09+ YEARS OF<br>EXPERIENCE.</p>
+                    </div>
+                </div>
+                <div class="highlightcard">
+                    <div class="cardiconbox"><i class="fas fa-trophy" style="color: rgb(239, 148, 0); "></i></div>
+                    <div class="carddescriptionbox">
+                        <p>09+ YEARS OF<br>EXPERIENCE.</p>
+                    </div>
+                </div>
+                <div class="highlightcard">
+                    <div class="cardiconbox"><i class="fas fa-trophy" style="color: rgb(239, 148, 0);"></i></div>
+                    <div class="carddescriptionbox">
+                        <p>09+ YEARS OF<br>EXPERIENCE.</p>
+                    </div>
+                </div>
+                <div class="highlightcard">
+                    <div class="cardiconbox"><i class="fas fa-trophy" style="color: rgb(239, 148, 0);"></i></div>
+                    <div class="carddescriptionbox">
+                        <p>09+ YEARS OF<br>EXPERIENCE.</p>
+                    </div>
+                </div>
+                <div class="highlightcard">
+                    <div class="cardiconbox"><i class="fas fa-trophy" style="color: rgb(239, 148, 0);"></i></div>
+                    <div class="carddescriptionbox">
+                        <p>09+ YEARS OF<br>EXPERIENCE.</p>
+                    </div>
+                </div>
+                <div class="highlightcard">
+                    <div class="cardiconbox"><i class="fas fa-trophy" style="color: rgb(239, 148, 0);"></i></div>
+                    <div class="carddescriptionbox">
+                        <p>09+ YEARS OF<br>EXPERIENCE.</p>
+                    </div>
+                </div>
+                <div class="highlightcard">
+                    <div class="cardiconbox"><i class="fas fa-trophy" style="color: rgb(239, 148, 0);"></i></div>
+                    <div class="carddescriptionbox">
+                        <p>09+ YEARS OF<br>EXPERIENCE.</p>
+                    </div>
+                </div>
+                <div class="highlightcard">
+                    <div class="cardiconbox"><i class="fas fa-trophy" style="color: rgb(239, 148, 0);"></i></div>
+                    <div class="carddescriptionbox">
+                        <p>09+ YEARS OF<br>EXPERIENCE.</p>
+                    </div>
+                </div>
+                <div class="highlightcard">
+                    <div class="cardiconbox"><i class="fas fa-trophy" style="color: rgb(239, 148, 0);"></i></div>
+                    <div class="carddescriptionbox">
+                        <p>09+ YEARS OF<br>EXPERIENCE.</p>
+                    </div>
+                </div>
+                <div class="highlightcard">
+                    <div class="cardiconbox"><i class="fas fa-trophy" style="color: rgb(239, 148, 0);"></i></div>
+                    <div class="carddescriptionbox">
+                        <p>09+ YEARS OF<br>EXPERIENCE.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="bookdemobtn"> <button><a href="">Book a Demo Class</a></button></div>
+        </div>
+
+
+        <div class="webdevcoursebox">
+
+            <div class="webdevcardleftcontent">
+                <div class="webdevcardtitlebox">
+                    <h2>Best Web Development Course In<br>Jaipur.</h2>
+                </div>
+
+                <div class="webdevdescriptionbox">
+                    <p>More than 500+ students have completed Web Development Course from JDB INFOTECH, as one-to-one
+                        training. Our tutor Mr. Nirmal Kumar, a passionate coach, believes in quality training. As a
+                        result, we only run Limited Batches with Small Batch Size.</p>
+                </div>
+                <div class="webdevbtnbox">
+                    <button><a href="https://web.jdbinfotech.co.in/#home"> Enroll Now</a></button>
+                </div>
+            </div>
+            <div class="webdevcardrightcontent">
+                <img src="https://web.jdbinfotech.co.in/images/1G.jpg" alt="">
+            </div>
+        </div>
+        <div class="ourspecialistbox">
+            <div class="ourspecialisttitlebox">
+                <h2>Our Specialities</h2>
+            </div>
+            <hr>
+            <div class="ourspecialistcardbox">
+                <div class="ourspecialistcard">
+                    <div class="ourspecialisticonbox">
+                        <i class="fas fa-user-circle" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="ourspecialisttitlebox">
+
+                        <p>Best Trainers</p>
+                    </div>
+                    <div class="ourspecialistdescriptionbox">
+                        <p>Get chance to learn Web Development from Industry expert having experience of more than 09+
+                            years.</p>
+                    </div>
+                </div>
+                <div class="ourspecialistcard">
+                    <div class="ourspecialisticonbox">
+                        <i class="fas fa-user-circle" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="ourspecialisttitlebox">
+
+                        <p>Best Trainers</p>
+                    </div>
+                    <div class="ourspecialistdescriptionbox">
+                        <p>Get chance to learn Web Development from Industry expert having experience of more than 09+
+                            years.</p>
+                    </div>
+                </div>
+                <div class="ourspecialistcard">
+                    <div class="ourspecialisticonbox">
+                        <i class="fas fa-user-circle" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="ourspecialisttitlebox">
+
+                        <p>Best Trainers</p>
+                    </div>
+                    <div class="ourspecialistdescriptionbox">
+                        <p>Get chance to learn Web Development from Industry expert having experience of more than 09+
+                            years.</p>
+                    </div>
+                </div>
+                <div class="ourspecialistcard">
+                    <div class="ourspecialisticonbox">
+                        <i class="fas fa-user-circle" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="ourspecialisttitlebox">
+
+                        <p>Best Trainers</p>
+                    </div>
+                    <div class="ourspecialistdescriptionbox">
+                        <p>Get chance to learn Web Development from Industry expert having experience of more than 09+
+                            years.</p>
+                    </div>
+                </div>
+                <div class="ourspecialistcard">
+                    <div class="ourspecialisticonbox">
+                        <i class="fas fa-user-circle" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="ourspecialisttitlebox">
+
+                        <p>Best Trainers</p>
+                    </div>
+                    <div class="ourspecialistdescriptionbox">
+                        <p>Get chance to learn Web Development from Industry expert having experience of more than 09+
+                            years.</p>
+                    </div>
+                </div>
+                <div class="ourspecialistcard">
+                    <div class="ourspecialisticonbox">
+                        <i class="fas fa-user-circle" style="color: rgb(255, 255, 255);"></i>
+                    </div>
+                    <div class="ourspecialisttitlebox">
+
+                        <p>Best Trainers</p>
+                    </div>
+                    <div class="ourspecialistdescriptionbox">
+                        <p>Get chance to learn Web Development from Industry expert having experience of more than 09+
+                            years.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="ourstudentscompaniesbox">
+            <div class="ourstudentscompaniesboxtitle">
+                <p>Our Sudents Work At</p>
+                <hr>
+            </div>
+            <div class="ourstudentsdescriptionbox">
+                <p>After completing Web Development course from JDB INFOTECH Jaipur, most students start their own
+                    business or freelance work.
+                    Some are doing jobs on different positions all around india. Below is the list of few Jaipur based
+                    companies, where
+                    students are working on Web Development positions.</p>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="https://web.jdbinfotech.co.in/images/3.download.png" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="https://web.jdbinfotech.co.in/images/3.download.png" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="https://web.jdbinfotech.co.in/images/3.download.png" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="https://web.jdbinfotech.co.in/images/3.download.png" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="https://web.jdbinfotech.co.in/images/3.download.png" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="https://web.jdbinfotech.co.in/images/3.download.png" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="https://web.jdbinfotech.co.in/images/3.download.png" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="https://web.jdbinfotech.co.in/images/3.download.png" alt="">
+                    </div>
+                    <div class="swiper-slide"><img src="https://web.jdbinfotech.co.in/images/3.download.png" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="bookdemobtn"> <button><a href="">Book a Demo Class</a></button></div>
+
+        </div>
+
+        <div class="teacherssection">
+
+            <div class="teacherstitlebox">
+
+                <p>Meet Our Trainers </p>
+                <hr>
+            </div>
+            <div class="ourtutorsection">
+                <div class="teacherscardsection">
+                    <div class="innerboxcard">
+
+                        <div class="teachersdetailssection">
+                            <div class="teacherimage"> <img src="https://web.jdbinfotech.co.in/images/nirmal.jpeg"
+                                    alt=""></div>
+                            <div class="teachername">
+                                <p>PANKAJ VERMA <br> Founder</p>
+                            </div>
+                        </div>
+                        <div class="teacherdescription">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iusto saepe omnis placeat
+                            officiis eligendi reprehenderit? Dolorem modi dolore omnis iure vitae commodi ipsam at error
+                            voluptatibus necessitatibus, corporis ab.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="teacherscardsection">
+                    <div class="innerboxcard">
+
+                        <div class="teachersdetailssection">
+                            <div class="teacherimage"> <img src="https://web.jdbinfotech.co.in/images/nirmal.jpeg"
+                                    alt=""></div>
+                            <div class="teachername">
+                                <p>PANKAJ VERMA <br> Founder</p>
+                            </div>
+                        </div>
+                        <div class="teacherdescription">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iusto saepe omnis placeat
+                            officiis eligendi reprehenderit? Dolorem modi dolore omnis iure vitae commodi ipsam at error
+                            voluptatibus necessitatibus, corporis ab.
+                        </div>
+                    </div>
+
+                </div>
+                <div class="teacherscardsection">
+                    <div class="innerboxcard">
+
+                        <div class="teachersdetailssection">
+                            <div class="teacherimage"> <img src="https://web.jdbinfotech.co.in/images/nirmal.jpeg"
+                                    alt=""></div>
+                            <div class="teachername">
+                                <p>PANKAJ VERMA <br> Founder</p>
+                            </div>
+                        </div>
+                        <div class="teacherdescription">
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio iusto saepe omnis placeat
+                            officiis eligendi reprehenderit? Dolorem modi dolore omnis iure vitae commodi ipsam at error
+                            voluptatibus necessitatibus, corporis ab.
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="faqsection">
+            <div class="faqtitlebox">
+                <p>FAQ’s on Web Development Course</p>
+            </div>
+            <div class="faqsubtitle">
+                <p> Quick answers of your all course queries, but if you still have any doubt, contact our team today.
+                </p>
+            </div>
+            <div class="expansionbox">
+                <ol>
+                    <li>
+                        <summary>
+                            Is it necessary to have knowledge of programming for web development?
+                        </summary>
+                        <details> No, its not necessary to know programming language for Web Development. You need
+                            to have little understanding of HTML, which you shall cover in 2 hours in our Course.
+                        </details>
+                    </li>
+                    <li>
+                        <summary>
+                            Is it necessary to have knowledge of programming for web development?
+                        </summary>
+                        <details> No, its not necessary to know programming language for Web Development. You need
+                            to have little understanding of HTML, which you shall cover in 2 hours in our Course.
+                        </details>
+                    </li>
+                    <li>
+                        <summary>
+                            Is it necessary to have knowledge of programming for web development?
+                        </summary>
+                        <details> No, its not necessary to know programming language for Web Development. You need
+                            to have little understanding of HTML, which you shall cover in 2 hours in our Course.
+                        </details>
+                    </li>
+                    <li>
+                        <summary>
+                            Is it necessary to have knowledge of programming for web development?
+                        </summary>
+                        <details> No, its not necessary to know programming language for Web Development. You need
+                            to have little understanding of HTML, which you shall cover in 2 hours in our Course.
+                        </details>
+                    </li>
+
+                </ol>
+            </div>
+            <div class="maplocationnox">
+                <div class="googlemap">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3556.679339747693!2d75.73628939999999!3d26.9453783!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa71ea5fb9d3b1c75%3A0x5705b237e98201e4!2sJDB%20Infotech%20%7C%20Web%20Development%20%26%20Digital%20Marketing%20Institute!5e0!3m2!1sen!2sin!4v1784696992087!5m2!1sen!2sin"
+                        width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+
+                </div>
+                <div class="contactdetails">
+
+                    <div class="contacttitle"><p>JDB INFOTECH</p></div>
+                    <ul>
+
+                        <li> <a href="https://maps.app.goo.gl/eKHdSJBFhFzNNGjv5"> 3rd floor, Pink City Plaza2, Joshi
+                                Marg, near
+                                hotel
+                                manohar place, Jhotwara, Jaipur, Rajasthan 302012</a></li>
+                        <li>
+                            <p>Phone : <span><a href="tel:7073734854" , target="_blank">+9170737-34854</a></span></p>
+                        </li>
+                        <li>
+                            <p>Email : <span><a href="info@jdbinfotech.co.in" ,
+                                        target="_blank">info@jdbinfotech.co.in</a></span></p>
+                        </li>
+
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.js"></script>
+
+        <script>
+            var swiper = new Swiper('.mySwiper', {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                autoplay: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+            });
+        </script>
+
+</body>
+
+</html>
